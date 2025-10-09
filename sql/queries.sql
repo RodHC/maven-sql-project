@@ -76,9 +76,6 @@ LIMIT 10;
 
 -- d. What is the average total claim cost for encounters, broken down by payer?
 
-SELECT * FROM encounters;
-SELECT * FROM payers;
-
 SELECT	
 	p.NAME,
 	ROUND(AVG(e.TOTAL_CLAIM_COST), 1) AS avg_claim_cost
@@ -90,9 +87,6 @@ ORDER BY avg_claim_cost DESC;
 -- OBJECTIVE 3: PATIENT BEHAVIOR ANALYSIS
 
 -- a. How many unique patients were admitted each quarter over time?
-
-SELECT * FROM encounters;
-SELECT * FROM patients;
 
 SELECT
 	strftime('%Y', START) AS year,
