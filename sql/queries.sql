@@ -96,7 +96,7 @@ SELECT
 		WHEN CAST(strftime('%m', START) AS INTEGER) BETWEEN 7 AND 9 THEN 'Q3'
 		WHEN CAST(strftime('%m', START) AS INTEGER) BETWEEN 10 AND 12 THEN 'Q4'
 	END AS quarter,
-	COUNT(DISTINCT PATIENT)
+	COUNT(DISTINCT PATIENT) AS num_patients
 FROM encounters
 GROUP BY year, quarter
 ORDER BY year, quarter 
