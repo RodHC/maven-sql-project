@@ -43,3 +43,4 @@ FROM encounters
 GROUP BY year
 ORDER BY year;
 ```
+[![Total Encounters Per Year](https://raw.githubusercontent.com/RodHC/maven-sql-project/main/sql/query_images/encounter_class_distribution.png)](https://raw.githubusercontent.com/RodHC/maven-sql-project/main/sql/query_images/encounter_class_distribution.png)
