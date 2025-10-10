@@ -113,7 +113,7 @@ Quarterly admissions ranged between **150 and 400+** patients, with noticeable p
 ## How to Use This Repository
 
 1. Explore the Queries:  
-   Review all SQL queries in [queries_and_results.md](./queries_and_results.md) or [sql/queries.sql](./sql/queries.sql).
+   Review all SQL queries in [sql/queries_and_results.md](./queries_and_results.md) or [sql/queries.sql](./sql/queries.sql).
 
 2. View Results:  
    Each query is accompanied by screenshots of the output for visual context in the `query_images/` folder.
