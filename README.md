@@ -28,8 +28,7 @@ The goal of this analysis is to answer key business and operational questions, i
 ## Project Structure
 
 1. README.md - Project Documentation
-2. sql/
-   3.1. queries.sql - All SQL queries used in the project
-   3.2. queries_and_results.md - All Business questions, queries, and results with visuals
-   3.3. schema.sql - Database Schema
-   3.4. query_images/ - Screenshots of query results
+2. queries.sql - All SQL queries used in the project
+3. queries_and_results.md - All Business questions, queries, and results with visuals
+4. schema.sql - Database Schema
+5. query_images - Screenshots of query results
