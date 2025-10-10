@@ -24,7 +24,7 @@ ORDER BY year;
 ```
 [![Total Encounters Per Year](https://raw.githubusercontent.com/RodHC/maven-sql-project/main/sql/query_images/total_encounters_per_year.png)](https://raw.githubusercontent.com/RodHC/maven-sql-project/main/sql/query_images/total_encounters_per_year.png)
 
-###2. Encounter Class Distribution by Year
+### 2. Encounter Class Distribution by Year
 
 **Business Question:**
 For each year, what percentage of encounters belonged to each encounter class (ambulatory, outpatient, wellness, urgent care, emergency, inpatient)?
@@ -45,7 +45,7 @@ ORDER BY year;
 ```
 [![Total Encounters Per Year](https://raw.githubusercontent.com/RodHC/maven-sql-project/main/sql/query_images/encounter_class_distribution.png)](https://raw.githubusercontent.com/RodHC/maven-sql-project/main/sql/query_images/encounter_class_distribution.png)
 
-###3. Encounters Over vs. Under 24 Hours
+### 3. Encounters Over vs. Under 24 Hours
 
 **Business Question:**
 What percentage of encounters were over 24 hours versus under 24 hours?
@@ -62,7 +62,7 @@ FROM encounters;
 
 ## OBJECTIVE 2: COST & COVERAGE INSIGHTS
 
-###4. Encounters with Zero Payer Coverage
+### 4. Encounters with Zero Payer Coverage
 
 **Business Question:**
 How many encounters had zero payer coverage, and what percentage of total encounters does this represent?
@@ -77,7 +77,7 @@ FROM encounters
 ```
 [![Total Encounters Per Year](https://raw.githubusercontent.com/RodHC/maven-sql-project/main/sql/query_images/encounters_zero_pay_coverage.png)](https://raw.githubusercontent.com/RodHC/maven-sql-project/main/sql/query_images/encounters_zero_pay_coverage.png)
 
-###5. Top 10 Most Frequent Procedures
+### 5. Top 10 Most Frequent Procedures
 
 **Business Question:**
 What are the top 10 most frequent procedures performed and their average base cost?
@@ -96,7 +96,7 @@ LIMIT 10;
 ```
 [![Total Encounters Per Year](https://raw.githubusercontent.com/RodHC/maven-sql-project/main/sql/query_images/top_10_procedures_cost.png)](https://raw.githubusercontent.com/RodHC/maven-sql-project/main/sql/query_images/top_10_procedures_cost.png)
 
-###6. Top 10 Procedures by Highest Average Cost
+### 6. Top 10 Procedures by Highest Average Cost
 
 **Business Question:**
 What are the top 10 procedures with the highest average base cost and how many times were they performed?
@@ -115,7 +115,7 @@ LIMIT 10;
 ```
 [![Total Encounters Per Year](https://raw.githubusercontent.com/RodHC/maven-sql-project/main/sql/query_images/top_10_procedure_highest_base_cost.png)](https://raw.githubusercontent.com/RodHC/maven-sql-project/main/sql/query_images/top_10_procedure_highest_base_cost.png)
 
-###7. Average Total Claim Cost by Payer
+### 7. Average Total Claim Cost by Payer
 
 **Business Question:**
 What is the average total claim cost for encounters, broken down by payer?
@@ -134,7 +134,7 @@ ORDER BY avg_claim_cost DESC;
 
 ## OBJECTIVE 3: PATIENT BEHAVIOR ANALYSIS
 
-###8. Unique Patients Per Quarter
+### 8. Unique Patients Per Quarter
 
 **Business Question:**
 How many unique patients were admitted each quarter over time?
@@ -156,7 +156,7 @@ ORDER BY year, quarter;
 ```
 [![Total Encounters Per Year](https://raw.githubusercontent.com/RodHC/maven-sql-project/main/sql/query_images/number_of_patients_by_quarter.png)](https://raw.githubusercontent.com/RodHC/maven-sql-project/main/sql/query_images/number_of_patients_by_quarter.png)
 
-###9. Readmissions Within 30 Days
+### 9. Readmissions Within 30 Days
 
 **Business Question:**
 How many patients were readmitted within 30 days of a previous encounter?
@@ -178,7 +178,7 @@ WHERE (julianday(next_start_date) - julianday(STOP)) < 30;
 ```
 [![Total Encounters Per Year](https://raw.githubusercontent.com/RodHC/maven-sql-project/main/sql/query_images/readmitted_patients_within_30_days.png)](https://raw.githubusercontent.com/RodHC/maven-sql-project/main/sql/query_images/readmitted_patients_within_30_days.png)
 
-###10. Patients With the Most Readmissions
+### 10. Patients With the Most Readmissions
 
 **Business Question:**
 Which patients had the most readmissions within 30 days?
