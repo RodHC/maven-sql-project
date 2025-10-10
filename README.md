@@ -27,14 +27,9 @@ The goal of this analysis is to answer key business and operational questions, i
 
 ## Project Structure
 
-maven-sql-project
-│
-├─ README.md # Project documentation (this file)
-├─ queries_and_results.md # All business questions, queries, and results with visuals
-│
-├─ sql/
-│ ├─ queries.sql # All SQL queries used in the project
-│ ├─ schema.sql # Database schema (optional)
-│ └─ query_images/ # Screenshots of query results
-│
-└─ data/ # (Optional) Placeholder if dataset is added later
+1. README.md - Project Documentation
+2. sql/
+   3.1. queries.sql - All SQL queries used in the project
+   3.2. queries_and_results.md - All Business questions, queries, and results with visuals
+   3.3. schema.sql - Database Schema
+   3.4. query_images/ - Screenshots of query results
