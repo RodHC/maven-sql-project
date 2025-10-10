@@ -1,6 +1,6 @@
 # Hospital Analytics — Queries & Results
 
-This report documents all SQL queries, explanations, and results for the Hospital Analytics project. Each section includes the business question, the query used to answer it, and a placeholder for the visual output or screenshot.
+This report documents all SQL queries, explanations, and results for the Hospital Analytics project. Each section includes the business question, the query used to answer it, and a screenshot of the output.
 
 **Note:** Original dataset is excluded due to copyright restrictions. All queries and results are shared for educational purposes only.
 
