@@ -22,9 +22,7 @@ FROM encounters
 GROUP BY year
 ORDER BY year;
 
-[![Total Encounters Per Year](../sql/query_images/total_encounters_per_year.png)](../sql/query_images/total_encounters_per_year.png)
-
-
+[![Total Encounters Per Year](https://raw.githubusercontent.com/RodHC/maven-sql-project/main/sql/query_images/total_encounters_per_year.png)](https://raw.githubusercontent.com/RodHC/maven-sql-project/main/sql/query_images/total_encounters_per_year.png)
 
 ###2. Encounter Class Distribution by Year
 
