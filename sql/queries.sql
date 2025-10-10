@@ -43,7 +43,17 @@ SELECT
 	COUNT(*) AS total_encounters
 FROM encounters
 
--- b. What are the top 10 most frequent procedures performed and the average base cost for each?
+-- b. How many encounters had zero payer coverage by Payer?
+
+SELECT	
+	p.NAME,
+	SUM(CASE WHEN PAYER_COVERAGE <= 0 THEN 1 ELSE 0 END) AS payer_count
+FROM encounters e 
+LEFT JOIN payers p ON e.PAYER = p.Id
+GROUP BY p.NAME
+ORDER BY payer_count DESC;
+	
+-- c. What are the top 10 most frequent procedures performed and the average base cost for each?
 
 SELECT
 	CODE,
@@ -59,7 +69,7 @@ ORDER BY
 LIMIT 10;
 
 
--- c. What are the top 10 procedures with the highest average base cost and the number of times they were performed?
+-- d. What are the top 10 procedures with the highest average base cost and the number of times they were performed?
 
 SELECT
 	CODE,
@@ -74,7 +84,7 @@ ORDER BY
 	highest_avg_base_cost DESC
 LIMIT 10;
 
--- d. What is the average total claim cost for encounters, broken down by payer?
+-- e. What is the average total claim cost for encounters, broken down by payer?
 
 SELECT	
 	p.NAME,
