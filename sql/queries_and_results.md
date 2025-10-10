@@ -44,3 +44,18 @@ GROUP BY year
 ORDER BY year;
 ```
 [![Total Encounters Per Year](https://raw.githubusercontent.com/RodHC/maven-sql-project/main/sql/query_images/encounter_class_distribution.png)](https://raw.githubusercontent.com/RodHC/maven-sql-project/main/sql/query_images/encounter_class_distribution.png)
+
+###3. Encounters Over vs. Under 24 Hours
+
+**Business Question:**
+What percentage of encounters were over 24 hours versus under 24 hours?
+
+**SQL Query:**
+```sql
+SELECT 
+  ROUND(100.0 * SUM(CASE WHEN ((julianday(STOP) - julianday(START)) * 24) >= 24 THEN 1 ELSE 0 END) / COUNT(*), 2) AS over_24_hrs,
+  ROUND(100.0 * SUM(CASE WHEN ((julianday(STOP) - julianday(START)) * 24) < 24 THEN 1 ELSE 0 END) / COUNT(*), 2) AS under_24_hrs,
+  COUNT(*) AS total_encounter
+FROM encounters;
+```
+[![Total Encounters Per Year](https://raw.githubusercontent.com/RodHC/maven-sql-project/main/sql/query_images/encounter_class_distribution.png)](https://raw.githubusercontent.com/RodHC/maven-sql-project/main/sql/query_images/encounter_class_distribution.png)
