@@ -41,8 +41,6 @@ The goal of this analysis is to answer key business and operational questions, i
 
 ## Key Findings & Insights
 
-## Key Findings & Insights
-
 ### 1. Encounter Trends Over Time  
 Across the dataset, there were **27,891 total encounters** between 2011 and 2022. Volumes grew steadily from 2011 (1,336 encounters) to a peak in 2014 (3,885), followed by small fluctuations in subsequent years. There was another spike in 2021 (3,530), but 2022 shows a sharp drop (220), which is likely due to incomplete data rather than a real decline.  
 
